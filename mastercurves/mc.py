@@ -232,7 +232,7 @@ class MasterCurve:
         if vtransform.type == "Multiply":
             self.vparam_names += ["b"]
         else:
-            self.vparam_names += [transform.param]
+            self.vparam_names += [vtransform.param]
         self.vparams += [vtransform.default]
         self.vuncertainties += [0.0]
         self.vbounds += [vtransform.bounds]
